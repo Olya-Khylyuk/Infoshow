@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Architects+Daughter&family=Borel&family=Funnel+Display:wght@300..800&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pangolin&family=Parkinsans:wght@300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Square+Peg&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+ body {
+    font-family: "Raleway", sans-serif;
+    background: #faeeeb;
+ }
+
+ header {
+    background-color: #500b1c;
+    width: 100%;
+    clear: both;
+ }
+
+ .navbar .container-fluid {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 10px 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #360713b2;
+ }
+
+ .navbar .nav-link {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #fff;
+ }
+
+ .navbar .nav-link:hover {
+    transition: all .6s ease;
+        background-image: linear-gradient(to right, #F32929, #fff);
+        -webkit-background-clip: text;
+        color: transparent;
+ }
+ .navbar .nav-link.btn-nav {
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-left: 5px;
+    transition: all .6s ease;
+ }
+ .navbar  .nav-link.btn-nav:hover {
+    border: 1px solid #F32929;
+ }
+
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler .navbar-toggler-icon  {
+    filter: invert(100%);
+}
+.fa-light .fa-xmark {
+    color: #fff;
+    font-size: 32px;
+}
+
+ div > .main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .main-page {
+    margin-top: -20px;
+    background-image: url('../img/Main-bg-img.png');
+    background-position: center;
+    padding-top: 50px;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+ }
+ .main-page .main-logo {
+    padding-top: 300px;
+    width: 40%;
+    cursor: pointer;
+    transition: all .6s ease;
+ }
+ .main-page .main-logo:hover {
+    transform: scale(1.1);
+ }
+
+ .main-page .main-arrow {
+    margin-top: 270px;
+    width: fit-content;
+    padding: 40px;
+    border-radius: 50%;
+    background-color: #360713;
+    color: #fff;
+    align-items: center;
+    
+    
+ }
+ .main-page .main-arrow i {
+    font-size: 50px;
+ }
+
+ main {
+    float: left;
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-bottom: 150px;
+    width: 50%;
+    height: fit-content;
+ }
+
+ aside {
+    float: right;
+    margin-top: 150px;
+    margin-right: 100px;
+    width: 400px;
+    @media(max-width: 1100px) {
+        display: none;
+    }
+ }
+ aside .info {
+    background: #4e071f0c;
+    color: #171717;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 140%;
+    border-radius: 5px;
+ }
+ aside .info h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 300;
+ }
+ aside .info img {
+    border: 5px solid #360713;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    object-fit: cover;
+ }
+
+form {
+    margin: 30px 0px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    cursor: pointer;
+
+}
+form input, 
+form textarea {
+    width: 100%;
+    resize: vertical;
+    border: 1px solid silver;
+    font-family: "Raleway", sans-serif;
+    border-radius:  5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+}
+form button {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #360713;
+    color: #fff;
+    transition: all .6s ease;
+    font-size: 16px;
+    margin-top: 10px;
+}
+form button:hover {
+    background: #500b1c;
+    transform: scale(1.05);
+
+}
+
+ form .error-mess {
+    color: red;
+    font-weight: 500;
+    display: none;
+}
+
+.one-post {
+    display: flex;
+    transition: all .6s ease;
+    cursor: pointer;
+}
+.one-post:hover {
+    transform: scale(1.01);
+
+}
+.one-post .post-img {
+    margin: 40px 20px;
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+}
+.post {
+  width: 50%;  
+  margin: 40px;
+  color: #360713;
+}
+.post h1 {
+     margin-bottom: 10px;
+     font-weight: 600;
+     font-size: 34px;
+     font-weight: 500;
+}
+
+.post .avtor {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.post .avtor span {
+    background: #faeeeb;
+    padding: 2px 7px;
+    font-weight: 400;
+    border-radius: 5px;
+    color: #360713;
+}
+.post a {
+    color: #500b1c;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    width: fit-content;
+    font-weight: 600;
+    padding: 4px 0px;
+    font-size: 18px;
+    border-bottom: 1px solid #17171700;
+    transition:  all .6s ease;
+}
+
+.post a:hover {
+    border-bottom: 1px solid #511021;
+    color: #360713;
+    transform: scale(1.05);
+}
+.post a i {
+    margin-left: 16px;
+
+}
+
+.comment {
+    width: 100%;
+    background: #faeeeb;
+    border: 1px solid #fac5b8;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.comment h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.carousel {
+    clear: both;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10; /* Щоб не перекривала динамічний об'єкт */
+    margin-top: 50px; }
+
+.carousel-img {
+    width: 100%;
+    height: 800px; /* Встановлюємо фіксовану висоту */
+    object-fit: cover; /* Обрізає зображення, щоб воно заповнювало блок */
+    object-position: top;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    border-radius: 50%;
+    padding: 30px 30px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 10; }
+
+  footer {
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    padding: 30px;
+    background-color: #360713 ;
+    color: #faeeeb;
+    box-sizing: border-box;
+  }
