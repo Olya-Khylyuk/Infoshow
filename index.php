@@ -35,6 +35,7 @@ require "blocks/head.php"
     </main>
     <?php require "blocks/aside.php" ?>
     
+    <?php require_once "blocks/video.php" ?>
     <?php require_once "blocks/carusel.php" ?>
     <?php require "blocks/footer.php" ?>
 

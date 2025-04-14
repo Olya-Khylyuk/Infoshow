@@ -297,6 +297,11 @@ form button:hover {
 .carousel-control-next {
     z-index: 10; }
 
+    .main-video iframe {
+        width: 100%;
+        height: 700px;
+    }
+
   footer {
     float: left;
     width: 100%;
